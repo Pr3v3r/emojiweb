@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Emoji Converter with Profiles</title>
+    <link rel="stylesheet" href="back.css">
+</head>
+<body>
+    <div class="sakura-container"></div>
+    <div id="userPersona" class="user-persona"></div>
+    <div class="container">
+        <h1>Sakura Emoji Converter</h1>
+        <div class="user-profile">
+            <h2>Your Emoji Persona</h2>
+            <div class="emoji-selection">
+                <button class="emoji-button" onclick="setEmoji('😊')">😊</button>
+                <button class="emoji-button" onclick="setEmoji('😎')">😎</button>
+                <button class="emoji-button" onclick="setEmoji('🤔')">🤔</button>
+                <button class="emoji-button" onclick="setEmoji('😢')">😢</button>
+                <button class="emoji-button" onclick="setEmoji('😠')">😠</button>
+            </div>
+        </div>
+        <div class="converter-section">
+            <h2>Text to Emoji</h2>
+            <input type="text" id="textInput" placeholder="Enter text">
+            <button onclick="convertToEmoji()">Convert to Emoji</button>
+            <div id="emojiOutput" class="output"></div>
+        </div>
+        <div class="converter-section">
+            <h2>Emoji to Text</h2>
+            <input type="text" id="emojiInput" placeholder="Enter emoji">
+            <button onclick="convertToText()">Convert to Text</button>
+            <div id="textOutput" class="output"></div>
+        </div>
+    </div>
+    <script src="sexy.js"></script>
+</body>
+</html>
+
